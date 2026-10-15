@@ -19,31 +19,7 @@ class TareaModel extends Model
         'prioridad',
     ];
 
-    private function filtrar(BaseBuilder $b , array $filtros): BaseBuilder
-    {
-        if(! empty ($filtros['buscar'])){
-            $b->groupStart()
-            ->like('t.titulo' $filtros['buscar'])
-            ->groupEnd();
-        }   
-
-        foreach(['prioridad', 'categoria_id'] as $campo){
-            if(! empty($filtros[$campo])){
-                $b->where('t.$campo' , $filtros[$campo]);
-            }
-        }
-        return $b;
-
-    }
-
-
-    private function base(): BaseBuilder
-    {
-        return $this ->db->table('tareas t')
-        ->select('t.tarea_id, t.titulo , t.descripcion, t.categoria_id, c.nom_categoria, t.prioridad')
-        ->join('categoria c', 'c.categoria_id = t.categoria_id');
-    }
-
+    //acoplacion 
     private function formatear(array $fila): array
     {
         foreach (['tablero_kanvan_id', 'estado_tarea_id', 'tarea_id'] as $campo) {
@@ -54,54 +30,44 @@ class TareaModel extends Model
         return $fila;
     }
 
-    public function listar(array $filtros = [], int $limite, int $desde): array
-    {
-        $fila = $this->filtrar($this->base(), $filtros)->orderBy('t.id_atarea')->limite($limite, $desde )->get()->getResultArray();
-        return array_map([$this, 'formatear'], $fila);
-    }
-
     public function listar(): array
     {
-        $fila = $this->datos
-            $datos = $this 
-            ->select('tareas.tarea_id, tareas.titulo, tareas.descripcion, categorias.nom_categoria, tareas.prioridad')
-            ->join('categorias', 'categorias.categoria_id = tareas.categoria_id')
-            ->findAll();
-            return array_map([$this, 'formatear'], $datos);
-    }
-    
-
-    public function contar(array $filtros = []): int
-    {
-        return $this->filtrar($this->db->base('tarea t'), $filtros)->countAllResult();
+        $datos = $this->select('tareas.tarea_id, tareas.titulo, tareas.descripcion, categorias.nom_categoria, tareas.prioridad')
+                      ->join('categorias', 'categorias.categoria_id = tareas.categoria_id')
+                      ->findAll();
+        return array_map([$this, 'formatear'], $datos);
     }
 
-    public function buscar(int $tarea_id): ? array 
+    public function buscarTarea(int $tarea_id): ?array 
     {
-        $fila = $this-base()->where('t.tarea_id', $tarea_id)->get()->getRowArray();
-        return $fila ? $this->formateo($fila) : null;
+        $fila = $this->find($tarea_id);
+        return $fila ? $this->formatear($fila) : null;
     }
 
-    public function crearTarea(array $d): int
+
+    public function crearTarea(array $datos)
     {
-        return (int) $this->insert([
-            'titulo' => $d['titulo'],
-            'descripcion' => $d['descripcion'] ?? null;
-            'cateogoria_id' => $d['categoria_id'],
-            'prioridad' => $d['prioridad'] ?? 'Alta'
+        $id = $this->insert([
+            'titulo' => $datos['titulo'],
+            'descripcion' => $datos['descripcion'],
+            'categoria_id' => $datos['categoria_id'],
+            'prioridad' => $datos['prioridad']
         ]);
+        return $id === false  ? null: (int) $id;
     }
 
-    public function actualizarTarea(int $tarea_id, array $valores): void
+    public function actualizarTarea(int $tarea_id, array $datos): bool
     {
-        if($valores){
-            $this->update($tarea_id, $valores);
+        $valores = array_intersect_key($datos, array_flip($this->allowedFields));
+        if (! $valores) {
+            return true;
         }
+        return $this->update($tarea_id, $valores);
     }
-
-    public function eliminarDeProyecto(int $tarea_id): void
+    public function eliminarTarea(int $tarea_id): void
     {
         $this->delete($tarea_id);
     }
+
 
 }
