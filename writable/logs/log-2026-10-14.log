@@ -1,0 +1,218 @@
+CRITICAL - 2026-10-14 16:20:19 --> ParseError: syntax error, unexpected single-quoted string "CategoriaController::mostrarDatos", expecting ")"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:20:31 --> ParseError: syntax error, unexpected single-quoted string "CategoriaController::mostrarDatos", expecting ")"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:20:31 --> ParseError: syntax error, unexpected single-quoted string "CategoriaController::mostrarDatos", expecting ")"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:20:31 --> ParseError: syntax error, unexpected single-quoted string "CategoriaController::mostrarDatos", expecting ")"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:20:32 --> ParseError: syntax error, unexpected single-quoted string "CategoriaController::mostrarDatos", expecting ")"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:20:41 --> ParseError: syntax error, unexpected single-quoted string "CategoriaController::mostrarDatos", expecting ")"
+[Method: GET, Route: categoria]
+in APPPATH\Config\Routes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:21:54 --> ParseError: syntax error, unexpected single-quoted string "nom_categoria", expecting "]"
+[Method: GET, Route: categoria]
+in APPPATH\Models\CategoriaModel.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\CategoriaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoriaModel')
+ 3 APPPATH\Controllers\CategoriaController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoriaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrarDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 16:32:43 --> ParseError: syntax error, unexpected token "=", expecting end of file
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 10.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:16:04 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:16:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:16:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:16:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:16:54 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:17:43 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:17:58 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:17:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:17:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: tablero]
+in APPPATH\Views\tablero.php on line 31.
+ 1 APPPATH\Views\tablero.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php', 31)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Views\\tablero.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('tablero', [], true)
+ 5 APPPATH\Controllers\TableroKanvanController.php(15): view('tablero', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TableroKanvanController->mostrarDatos()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableroKanvanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-14 17:34:56 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: tareas]
+in APPPATH\Controllers\TareaController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Controllers\\TareaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TareaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TareaController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\TareaController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('tareas')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
