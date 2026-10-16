@@ -38,6 +38,7 @@ class TareaModel extends Model
         return array_map([$this, 'formatear'], $datos);
     }
 
+    
     public function buscarTarea(int $tarea_id): ?array 
     {
         $fila = $this->find($tarea_id);
@@ -45,7 +46,7 @@ class TareaModel extends Model
     }
 
 
-    public function crearTarea(array $datos)
+    public function crearTarea(array $datos) : int
     {
         $id = $this->insert([
             'titulo' => $datos['titulo'],
@@ -64,6 +65,8 @@ class TareaModel extends Model
         }
         return $this->update($tarea_id, $valores);
     }
+
+
     public function eliminarTarea(int $tarea_id): void
     {
         $this->delete($tarea_id);

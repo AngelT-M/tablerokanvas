@@ -15,4 +15,7 @@ class CategoriaController extends BaseController
     }
 
     public function listar()
+    {
+        
+    }
 }

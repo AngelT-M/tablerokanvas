@@ -13,66 +13,58 @@ class TableroKanvanModel extends Model
         'tarea_id'
     ];
 
-    private function filtrar(BaseBuilder $b, array $filtros): BaseBuilder
-    {
-        if (! empty($filtros['estado_tarea_id'])) {
-            $b->where('tk.estado_tarea_id', $filtros['estado_tarea_id']);
-        }
-
-        if (! empty($filtros['tarea_id'])) {
-            $b->where('tk.tarea_id', $filtros['tarea_id']);
-        }
-    }
-   
-
-    public function base(): BaseBuilder
-    {
-        return $this->db-table('tablero_kanvan tk')
-        ->select('tk.tablero_kanvan_id, tk.estado_tarea_id, tk.tarea_id');
-    }
-
+    
     public function formatear(array $fila): array 
     {
-        foreach(['tablero_kanvan_id', 'estado_tarea_id', 'tarea_id']){
-            $fila[$campo] = int $fila[$campo];
+        foreach(['tablero_kanvan_id', 'estado_tarea_id', 'tarea_id'] as $campo){
+            if (isset($fila[$campo])) {
+                 $fila[$campo] = int $fila[$campo];     
+            }
         }
         retur $fila;
     }
 
-    public function listar(array $filtros = [], int $limite, int $desde): array
+    public function listar(): array
     {
-        $fila = $this->filtrar($this->base(), $filtros)->orderBy('tk.tablero_canvan_id')->limit($limite, $desde)->ge()->getResultArray();
-        return array_map([$this, 'formateo'], $fila);
-    }
-
-    public function contar(array $filtros =[]): int 
-    {
-        return $this->filtrar($this->db->base('tablero_kanvan tk'), $filtros)->countAllResult();
+        $datos = $this->select('tablero_kanvan.tablero_Kanvan_id, estados_tarea.estado_tarea_id, tareas.tarea_id')
+        ->join('tareas', 'tareas.tarea_id = tablero_kanvan.tarea_id')
+        ->join('estado_tarea', 'estado_tarea.estado_tarea_id = tablero_kanvan.estado_tarea_id')
+        ->findAll();
+        return array_map([$this, 'formatear'], $datos);
     }
 
     public function buscar(int $tablero_kanvan_id): ? array 
     {
-        $fila = $this->base()->where('tk.tablero_kanvan_id', $tablero_kanvan_id)->get()->getRowArray();
+        $fila = $this->find($tablero_kanvan_id);
         return $fila ? $this->formateo($fila): null;
     }
-    public function crearRegistro(array $d): int 
+
+    
+    public function crear(array $datos): int 
     {
-        return (int) $this->insert([
-            'estado_tarea_id' => $d['esatodo_tarea_id'],
-            'tarea_id' => $d['tarea_id']
-        ]);
+        $id = $this->insent([
+            'estado_tarea_id' => $datos['estado_tarea_id'],
+            'tarea_id' => $dato['tarea_id']
+        ]):
+
+        return $id === false ? null: (int) $id;
     }
 
-    public function actualizarRegistro(int $tablero_kanvan_id, array $valores): void 
+    public function actualizar(int $tablero_kanvan_id, array $datos): bool 
     {
-        if($valores){
-            $this->update($tablero_kanvan_id, $valores);
+        $valores = array_intersect_key($datos, array_flip($this->allowedFields));
+        if(!$valores){
+            return true;
         }
+        return $this->update($tablero_kanvan_id, $valores);
     }
 
-    public function eliminarRegistro(int $tablero_kanvan_id): void 
+     public function eliminar(int $tablero_kanvan_id): void 
     {
         $this->delete($tablero_kanvan_id);
     }
 
+
+
+   
 }

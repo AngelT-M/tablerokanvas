@@ -19,6 +19,7 @@ class TareaController extends BaseController
     public function mostrarDatos(){
         return $this->respond($this->modelo->listar());
     }
+
     public function eliminar(int $id){
         $this->modelo->eliminarTarea($id);
     }

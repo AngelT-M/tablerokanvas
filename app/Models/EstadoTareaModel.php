@@ -11,68 +11,48 @@ class EstadoTareaModel extends Model
     protected $allowedFields = ['nom_estado'];
 
 
-    private function filtrar(BaseBuilder $b, array $filtros): BaseBuilder
-    {
-        if (! empty($filtros['buscar'])) {
-            $b->groupStart()
-              ->like('et.nom_estado', $filtros['buscar'])
-              ->groupEnd();
-        }
-        foreach (['nom_estado'] as $campo) {
-            if (! empty($filtros[$campo])) {
-                $b->where("et.$campo", $filtros[$campo]);
-            }
-        }
-        return $b;
-    }
-
-    private function base(): BaseBuilder
-    {
-        return $this->db->table('estados_tarea et')
-            ->select('et.estado_tarea_id, et.nom_estado');
-    }
-
     private function formatear(array $fila): array 
     {
-        if (isset($fila['estado_tarea_id'])) {
-            $fila['estado_tarea_id'] = (int) $fila['estado_tarea_id'];
+        foreach (['estado_tarea_id', 'nom_estado'] as $campo) {
+            if (isset($fila[$campo])) {
+                $fila[$campo] = (int) $fila[$campo];
+            }
         }
         return $fila;
     }
 
-    public function listar(array $filtros = [], int $limite = 0, int $desde = 0): array
+    public function listar(): array
     {
-        $fila = $this->filtrar($this->base(), $filtros)->orderBy('et.estado_tarea_id')->limit($limite, $desde)->get()->getResultArray();
-        return array_map([$this, 'formatear'], $fila);
-    }
-
-    public function contar(array $filtros = []): int 
-    {
-        return $this->filtrar($this->db->table('estados_tarea et'), $filtros)->countAllResults();
+        $datos = $this->select('estado_tarea_id , nom_estado')
+                      ->findAll();
+        return array_map([$this, 'formatear'], $datos);
     }
 
     public function buscar(int $estado_tarea_id): ?array 
     {
-        $fila = $this->base()->where('et.estado_tarea_id', $estado_tarea_id)->get()->getRowArray();
+        $fila = $this->find($estado_tarea_id):
         return $fila ? $this->formatear($fila) : null;
     }
 
-    public function crearRegistro(array $d): int 
+
+    public function crear(array $datos): int 
     {
-        return (int) $this->insert([
-            'estado_tarea_id'=> $d['estado_tarea_id'],
-            'nom_estado' => $d['nom_estado']
+        $id = $this->insert([
+            'nom_tarea' => $datos['nom_estado']
         ]);
+        return $id === false ? null (int) $id;
     }
 
-    public function actualizarRegistro(int $estado_tarea_id, array $valores): void
+    public function actualizar(int $estado_tarea_id, array $datos): bool
     {
-        if ($valores) {
-            $this->update($estado_tarea_id, $valores);
+        $valores = array_intersect_key($datos, array_flip($this->allowedFields));
+        if (! $valores) {
+            return true;
         }
+        return $this->update($estado_tarea_id, $valores);
     }
 
-    public function eliminarRegistro(int $estado_tarea_id): void 
+    public function eliminar(int $estado_tarea_id): void 
     {
         $this->delete($estado_tarea_id);    
     }
