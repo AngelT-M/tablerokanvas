@@ -2,16 +2,20 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
 use App\Models\TableroKanvanModel;
+use CodeIgniter\API\ResponseTrait;
 
 class TableroKanvanController extends BaseController
 {
+    use ResponseTrait;
+    private TableroKanvanModel $modelo;
+
+    public function __construct(){
+        $this->modelo = model(TableroKanvanModel::class);
+    }
+
     public function mostrarDatos()
     {
-        $datos = new TableroKanvanModel();
-            
-
-        return view('tablero', ['datos' => $datos->findAll()]);
+        return $this->respond($this->modelo->listar());
     }
 }

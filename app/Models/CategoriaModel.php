@@ -13,17 +13,19 @@ class CategoriaModel extends Model
     ];
 
     /*Solo las actividades */
-    public function formatear(array $fila); array 
+    public function formatear(array $fila): array
     {
-        foreach(['categoria_id', 'nom_categoria']){
-            $fila[$campo] = int $fila[$campo];
+        foreach(['categoria_id'] as $campo){
+            if (isset($fila[$campo])) {
+                $fila[$campo] = (int) $fila[$campo];
+            }
         }
         return $fila;
     }
 
     public function listar(): array
     {
-        $datos = this->select('categoria_id, nom_categoria')
+        $datos = $this->select('categoria_id, nom_categoria')
                     ->findAll();
         return array_map([$this, 'formatear'], $datos);
     }
@@ -34,24 +36,24 @@ class CategoriaModel extends Model
         return $fila ? $this->formatear($fila): null;
     }
     
-    public function crearRegistro(array $datos): int 
+    public function crearRegistro(array $datos): ?int
     {
         $id = $this->insert([
-        'nom_categoria' => $datos['titulo ']
+            'nom_categoria' => $datos['nom_categoria']
         ]);
-        return $id === false ? null: (int) $id;
+        return $id === false ? null : (int) $id;
     }
 
     public function actualizar(int $categoria_id, array $datos): bool 
     {
-        $valores = array_intersect_key($datos. array_flip($this->allowdFields));
+        $valores = array_intersect_key($datos, array_flip($this->allowedFields));
         if(! $valores){
             return true;
         }
         return $this->update($categoria_id, $valores);
     }
 
-    public function eliminar(int $categoria_id, ) : void 
+    public function eliminar(int $categoria_id): void
     {
         $this->delete($categoria_id);    
     }

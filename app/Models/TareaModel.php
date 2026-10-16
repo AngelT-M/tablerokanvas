@@ -17,6 +17,8 @@ class TareaModel extends Model
         'descripcion',
         'categoria_id',
         'prioridad',
+        'estado',
+        'usuario'
     ];
 
     //acoplacion 
@@ -32,7 +34,7 @@ class TareaModel extends Model
 
     public function listar(): array
     {
-        $datos = $this->select('tareas.tarea_id, tareas.titulo, tareas.descripcion, categorias.nom_categoria, tareas.prioridad')
+        $datos = $this->select('tareas.tarea_id, tareas.titulo, tareas.descripcion, categorias.nom_categoria, tareas.prioridad, tareas.estado, tareas.usuario')
                       ->join('categorias', 'categorias.categoria_id = tareas.categoria_id')
                       ->findAll();
         return array_map([$this, 'formatear'], $datos);
@@ -52,7 +54,9 @@ class TareaModel extends Model
             'titulo' => $datos['titulo'],
             'descripcion' => $datos['descripcion'],
             'categoria_id' => $datos['categoria_id'],
-            'prioridad' => $datos['prioridad']
+            'prioridad' => $datos['prioridad'],
+            'estado' =>$datos['estado'],
+            'usuario' =>$datos['usuario']
         ]);
         return $id === false  ? null: (int) $id;
     }

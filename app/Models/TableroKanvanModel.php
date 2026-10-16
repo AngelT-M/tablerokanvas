@@ -21,15 +21,15 @@ class TableroKanvanModel extends Model
                  $fila[$campo] = int $fila[$campo];     
             }
         }
-        retur $fila;
+        return $fila;
     }
 
     public function listar(): array
     {
         $datos = $this->select('tablero_kanvan.tablero_Kanvan_id, estados_tarea.estado_tarea_id, tareas.tarea_id')
-        ->join('tareas', 'tareas.tarea_id = tablero_kanvan.tarea_id')
-        ->join('estado_tarea', 'estado_tarea.estado_tarea_id = tablero_kanvan.estado_tarea_id')
-        ->findAll();
+                      ->join('tareas', 'tareas.tarea_id = tablero_kanvan.tarea_id')
+                      ->join('estados_tarea', 'estados_tarea.estado_tarea_id = tablero_kanvan.estado_tarea_id')
+                      ->findAll();
         return array_map([$this, 'formatear'], $datos);
     }
 

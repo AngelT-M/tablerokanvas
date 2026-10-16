@@ -1,0 +1,236 @@
+CRITICAL - 2026-10-16 15:28:56 --> ErrorException: Trait "CodeIgniter\API\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:30:51 --> ErrorException: Trait "CodeIgniter\API\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:31:28 --> ErrorException: Trait "CodeIgniter\API\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:34:22 --> ErrorException: Trait "CodeIgniter\API\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:36:28 --> ErrorException: Trait "CodeIgniter\API\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:37:29 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:37:31 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:37:44 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:38:24 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:38:25 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:38:26 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:38:27 --> ErrorException: Trait "App\Controllers\ResponseTraint" not found
+[Method: GET, Route: tablero]
+in APPPATH\Controllers\TableroKanvanController.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 15:39:14 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 15:39:18 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 15:39:45 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 15:39:46 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 15:39:47 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 15:54:57 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::grut()
+[Method: GET, Route: tareas]
+in APPPATH\Config\Routes.php on line 8.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 16:45:22 --> ErrorException: Trait "App\Models\API\ResonseTrait" not found
+[Method: GET, Route: api/categoria]
+in APPPATH\Controllers\CategoriaController.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 16:48:25 --> ErrorException: Trait "App\Controllers\ResponseTrait" not found
+[Method: GET, Route: api/categoria]
+in APPPATH\Controllers\CategoriaController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-16 16:48:53 --> ParseError: syntax error, unexpected token "array", expecting "function" or "const"
+[Method: GET, Route: api/categoria]
+in APPPATH\Models\CategoriaModel.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\CategoriaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoriaModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoriaModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\CategoriaModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoriaModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoriaModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\CategoriaController.php(15): model('App\\Models\\CategoriaModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\CategoriaController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 16:50:38 --> ParseError: syntax error, unexpected token ")"
+[Method: GET, Route: api/categoria]
+in APPPATH\Models\CategoriaModel.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\CategoriaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoriaModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoriaModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\CategoriaModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoriaModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoriaModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\CategoriaController.php(15): model('App\\Models\\CategoriaModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\CategoriaController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 17:08:30 --> ParseError: syntax error, unexpected single-quoted string "usuario", expecting "]"
+[Method: GET, Route: api/tareas]
+in APPPATH\Models\TareaModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TareaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TareaModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TareaModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TareaModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TareaModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TareaModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TareaController.php(16): model('App\\Models\\TareaModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TareaController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 17:21:20 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: api/tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-16 17:52:25 --> ParseError: syntax error, unexpected variable "$fila"
+[Method: GET, Route: api/tablero]
+in APPPATH\Models\TableroKanvanModel.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\tablerokanvas\\app\\Models\\TableroKanvanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TableroKanvanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TableroKanvanModel')
+ 4 SYSTEMPATH\Config\Factories.php(298): class_exists('App\\Models\\TableroKanvanModel')
+ 5 SYSTEMPATH\Config\Factories.php(217): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TableroKanvanModel')
+ 6 SYSTEMPATH\Config\Factories.php(160): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TableroKanvanModel', [...])
+ 7 SYSTEMPATH\Common.php(851): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\TableroKanvanController.php(14): model('App\\Models\\TableroKanvanModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\TableroKanvanController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
