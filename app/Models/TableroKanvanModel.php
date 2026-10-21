@@ -16,9 +16,9 @@ class TableroKanvanModel extends Model
     
     public function formatear(array $fila): array 
     {
-        foreach(['tablero_kanvan_id', 'estado_tarea_id', 'tarea_id'] as $campo){
+        foreach(['tablero_Kanvan_id', 'estado_tarea_id', 'tarea_id'] as $campo){
             if (isset($fila[$campo])) {
-                 $fila[$campo] = int $fila[$campo];     
+                 $fila[$campo] = (int) $fila[$campo];     
             }
         }
         return $fila;
@@ -36,17 +36,15 @@ class TableroKanvanModel extends Model
     public function buscar(int $tablero_kanvan_id): ? array 
     {
         $fila = $this->find($tablero_kanvan_id);
-        return $fila ? $this->formateo($fila): null;
+        return $fila ? $this->formatear($fila): null;
     }
 
-    
     public function crear(array $datos): int 
     {
-        $id = $this->insent([
+        $id = $this->insert([
             'estado_tarea_id' => $datos['estado_tarea_id'],
-            'tarea_id' => $dato['tarea_id']
-        ]):
-
+            'tarea_id' => $datos['tarea_id']
+        ]);
         return $id === false ? null: (int) $id;
     }
 
@@ -59,7 +57,7 @@ class TableroKanvanModel extends Model
         return $this->update($tablero_kanvan_id, $valores);
     }
 
-     public function eliminar(int $tablero_kanvan_id): void 
+    public function eliminar(int $tablero_kanvan_id): void 
     {
         $this->delete($tablero_kanvan_id);
     }

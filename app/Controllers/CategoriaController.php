@@ -15,6 +15,8 @@ class CategoriaController extends BaseController
         $this->modelo = model(CategoriaModel::class);
     }
 
+    
+
     public function mostrarDatos(){
         return $this->respond($this->modelo->listar());
     }

@@ -36,7 +36,7 @@ class CategoriaModel extends Model
         return $fila ? $this->formatear($fila): null;
     }
     
-    public function crearRegistro(array $datos): ?int
+    public function crear(array $datos): ?int
     {
         $id = $this->insert([
             'nom_categoria' => $datos['nom_categoria']

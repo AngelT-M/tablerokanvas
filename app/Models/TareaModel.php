@@ -7,8 +7,7 @@ use CodeIgniter\Model;
 class TareaModel extends Model
 {
     public const PRIORIDADES = ['Baja', 'Media', 'Alta'];
-
-
+    
     protected $table         = 'tareas';
     protected $primaryKey    = 'tarea_id';
     protected $returnType    = 'array';
@@ -21,7 +20,6 @@ class TareaModel extends Model
         'usuario'
     ];
 
-    //acoplacion 
     private function formatear(array $fila): array
     {
         foreach (['tablero_kanvan_id', 'estado_tarea_id', 'tarea_id'] as $campo) {
@@ -41,14 +39,14 @@ class TareaModel extends Model
     }
 
     
-    public function buscarTarea(int $tarea_id): ?array 
+    public function buscar(int $tarea_id): ?array 
     {
         $fila = $this->find($tarea_id);
         return $fila ? $this->formatear($fila) : null;
     }
 
 
-    public function crearTarea(array $datos) : int
+    public function crear(array $datos) : int
     {
         $id = $this->insert([
             'titulo' => $datos['titulo'],
@@ -61,7 +59,7 @@ class TareaModel extends Model
         return $id === false  ? null: (int) $id;
     }
 
-    public function actualizarTarea(int $tarea_id, array $datos): bool
+    public function actualizar(int $tarea_id, array $datos): bool
     {
         $valores = array_intersect_key($datos, array_flip($this->allowedFields));
         if (! $valores) {
@@ -71,10 +69,8 @@ class TareaModel extends Model
     }
 
 
-    public function eliminarTarea(int $tarea_id): void
+    public function eliminar(int $tarea_id): void
     {
         $this->delete($tarea_id);
     }
-
-
 }

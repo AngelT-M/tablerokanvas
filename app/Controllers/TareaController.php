@@ -20,13 +20,12 @@ class TareaController extends BaseController
         return $this->respond($this->modelo->listar());
     }
 
-    public function eliminar(int $id){
-        $this->modelo->eliminarTarea($id);
-    }
-
     public function buscar(int $id){
-        $datos = $this->modelo->buscarTarea($id);
-        
+        $datos = $this->modelo->buscar($id);
+        if ($datos === null){
+            return $this->failNotFound("no se encontro la tarea con el id {$id}");
+        }
+        return $this->respond($datos);
     }
 
     private function cuerpo(): array{
@@ -37,15 +36,17 @@ class TareaController extends BaseController
     }
 
     public function crear(){
-        $id = $this->modelo->crearTarea($this->cuerpo());
+        $id = $this->modelo->crear($this->cuerpo());
         return $id;
     }
 
-
     public function actualizar(int $id){
         
-        return $this->modelo->actualizarTarea($id, $this->cuerpo());
-       // $this->model->actualizarTarea(int $id, $datos)
+        return $this->modelo->actualizar($id, $this->cuerpo());
+    }
+
+    public function eliminar(int $id){
+        $this->modelo->eliminar($id);
     }
 
 }

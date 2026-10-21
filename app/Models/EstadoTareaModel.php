@@ -13,7 +13,7 @@ class EstadoTareaModel extends Model
 
     private function formatear(array $fila): array 
     {
-        foreach (['estado_tarea_id', 'nom_estado'] as $campo) {
+        foreach ( ['estado_tarea_id'] as $campo) {
             if (isset($fila[$campo])) {
                 $fila[$campo] = (int) $fila[$campo];
             }
@@ -30,7 +30,7 @@ class EstadoTareaModel extends Model
 
     public function buscar(int $estado_tarea_id): ?array 
     {
-        $fila = $this->find($estado_tarea_id):
+        $fila = $this->find($estado_tarea_id);
         return $fila ? $this->formatear($fila) : null;
     }
 
@@ -38,9 +38,9 @@ class EstadoTareaModel extends Model
     public function crear(array $datos): int 
     {
         $id = $this->insert([
-            'nom_tarea' => $datos['nom_estado']
+            'nom_estado' => $datos['nom_estado']
         ]);
-        return $id === false ? null (int) $id;
+        return $id === false ? null: (int) $id;
     }
 
     public function actualizar(int $estado_tarea_id, array $datos): bool
